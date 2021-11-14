@@ -66,7 +66,7 @@ class SemanticScholarSpider(scrapy.Spider):
             yield scrapy.FormRequest(
                 start_url,
                 # cookies=self.cookies,
-                headers=self.headers,
+                # headers=self.headers,
                 callback=self.parse
             )
 
@@ -79,7 +79,7 @@ class SemanticScholarSpider(scrapy.Spider):
         url_list = [url.root for url in response.xpath("//*/@href")]
         for url in url_list:
             if url.startswith('/author/') and url != this_url[back_url_index:]:
-                yield Request("https://www.semanticscholar.org" + url, callback=self.parse, headers=self.headers)
+                yield Request("https://www.semanticscholar.org" + url, callback=self.parse)
 
         author = ScholarAuthorItem()
         # author = {}
@@ -99,12 +99,12 @@ class SemanticScholarSpider(scrapy.Spider):
 
         yield Request("https://api.semanticscholar.org/graph/v1/author/" + back_url[
             -1] + "?fields=url,externalIds,name,aliases,affiliations,homepage,papers",
-                      meta={'item': author}, callback=self.parse_author_detail, headers=self.headers)
+                      meta={'item': author}, callback=self.parse_author_detail)
 
         for idx in range(0, int(float(author['indices_pubs'])), 20):
             yield Request("https://api.semanticscholar.org/graph/v1/author/" + back_url[
                 -1] + "/papers?fields=externalIds,title,abstract,venue,year,authors.authorId,references.paperId,referenceCount,citationCount,influentialCitationCount,fieldsOfStudy&limit=20&offset=" + str(
-                idx), headers=self.headers, callback=self.parse_pubs)
+                idx), callback=self.parse_pubs)
 
         yield author
 
