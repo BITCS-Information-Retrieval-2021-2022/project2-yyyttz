@@ -47,12 +47,12 @@ class SemanticScholarSpider(scrapy.Spider):
     db = ConnectMongoDB()
 
     def start_requests(self):
+        list = []
         while True:
             temp_id = random.randint(1100000, 100000000)
-            one_result = self.db.query_author(temp_id)
-            while one_result > 0:
+            while temp_id in list:
                 temp_id = random.randint(1100000, 100000000)
-                one_result = self.db.query_author(temp_id)
+            list.append(temp_id)
             url = self.start_urls + str(temp_id)
             yield scrapy.FormRequest(
                 url,
@@ -74,7 +74,7 @@ class SemanticScholarSpider(scrapy.Spider):
                     callback=self.parse
                 )
         except KeyError:
-            print("##########")
+            print("@@@@@@@@@@")
             print(data)
             print("Catch an exception!！")
 
@@ -129,6 +129,8 @@ class SemanticScholarSpider(scrapy.Spider):
                 if '.' in data['name']:
                     for aliase in data["aliases"]:
                         if '.' not in aliase:
+                            print(data['name'])
+                            print(aliase)
                             data["aliases"].append(data['name'])
                             data['name'] = aliase
                             data["aliases"].remove(aliase)

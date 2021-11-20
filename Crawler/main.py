@@ -10,4 +10,5 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 '''爬虫'''
 # execute(['scrapy', 'crawl', 'semanticscholar'])
 
+'''爬虫修改版本'''
 execute(['scrapy', 'crawl', 'semanticscholarmodify'])
