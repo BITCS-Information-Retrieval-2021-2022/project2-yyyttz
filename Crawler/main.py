@@ -8,5 +8,6 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 # execute(['scrapy', 'crawl', 'preprocess'])
 
 '''爬虫'''
-execute(['scrapy', 'crawl', 'semanticscholar'])
+# execute(['scrapy', 'crawl', 'semanticscholar'])
 
+execute(['scrapy', 'crawl', 'semanticscholarmodify'])
