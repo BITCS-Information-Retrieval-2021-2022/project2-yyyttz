@@ -14,8 +14,11 @@ NEWSPIDER_MODULE = 'scholar.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'scholar (+http://www.yourdomain.com)'
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36"
+# USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36"
 HTTPERROR_ALLOWED_CODES = [302, 403]
+
+LOG_FILE = "scholar.log"
+LOG_LEVEL = "INFO"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -63,9 +66,9 @@ DOWNLOAD_DELAY = 3
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'scholar.pipelines.ScholarPipeline': 300,
-# }
+ITEM_PIPELINES = {
+   'scholar.pipelines.ScholarPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

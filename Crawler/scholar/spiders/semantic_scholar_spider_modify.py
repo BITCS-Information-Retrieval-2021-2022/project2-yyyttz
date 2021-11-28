@@ -8,24 +8,24 @@ import string
 
 
 
-class ConnectMongoDB(object):
-    def __init__(self):
-        self.client = MongoClient(host='121.5.169.182', port=27017, username='ccty', password='asdfghjkl')
-        self.database = self.client.IR
-
-    def insert_author(self, author):
-        collection_author = self.database.scholarAuthor
-        collection_author.update({'id': author['id']}, {'$set': author.__dict__}, True)
-
-    def query_author(self, author_id):
-        print(author_id)
-        collection_author = self.database.scholarAuthor
-        one_result = collection_author.count_documents({"id": author_id})
-        return one_result
-
-    def insert_paper(self, paper):
-        collection_paper = self.database.scholarPaper
-        collection_paper.update({'id': paper['id']}, {'$set': paper.__dict__}, True)
+# class ConnectMongoDB(object):
+#     def __init__(self):
+#         self.client = MongoClient(host='121.5.169.182', port=28887, username='scholar', password='r4u30dYkgeqVdlaR')
+#         self.database = self.client.scholar
+#
+#     def insert_author(self, author):
+#         collection_author = self.database.scholarAuthor
+#         collection_author.update({'id': author['id']}, {'$set': author.__dict__}, True)
+#
+#     def query_author(self, author_id):
+#         print(author_id)
+#         collection_author = self.database.scholarAuthor
+#         one_result = collection_author.count_documents({"id": author_id})
+#         return one_result
+#
+#     def insert_paper(self, paper):
+#         collection_paper = self.database.scholarPaper
+#         collection_paper.update({'id': paper['id']}, {'$set': paper.__dict__}, True)
 
 
 class SemanticScholarSpider(scrapy.Spider):
@@ -44,7 +44,7 @@ class SemanticScholarSpider(scrapy.Spider):
         '_gat_gtag_UA_67668211_2': '1',
         'gr_user_id': '9b5a984d-e923-4fa2-9951-c77567549785',
     }
-    db = ConnectMongoDB()
+    # db = ConnectMongoDB()
 
     def start_requests(self):
         list = []
@@ -135,7 +135,7 @@ class SemanticScholarSpider(scrapy.Spider):
                             data['name'] = aliase
                             data["aliases"].remove(aliase)
                             break
-            self.db.insert_author(author)
+            # self.db.insert_author(author)
             yield author
         except KeyError:
             print("##########")
@@ -163,7 +163,7 @@ class SemanticScholarSpider(scrapy.Spider):
                     "influentialCitationCount"] else None
                 item["fieldsOfStudy"] = pub["fieldsOfStudy"] if pub["fieldsOfStudy"] else None
                 item["references"] = pub["references"] if pub["references"] else None
-                self.db.insert_paper(item)
+                # self.db.insert_paper(item)
                 yield item
         except KeyError:
             print("!!!!!!!!!!")
