@@ -127,14 +127,17 @@ class SemanticScholarSpider(scrapy.Spider):
             author["publications"] = data["papers"] if data["papers"] else None
             if data["aliases"] and data['name']:
                 if '.' in data['name']:
+                    temp_length = 0
+                    temp_aliase = None
                     for aliase in data["aliases"]:
-                        if '.' not in aliase:
-                            print(data['name'])
-                            print(aliase)
-                            data["aliases"].append(data['name'])
-                            data['name'] = aliase
-                            data["aliases"].remove(aliase)
-                            break
+                        if '.' not in aliase and len(aliase) > temp_length:
+                            temp_aliase = aliase
+                            temp_length = len(aliase)
+                    if temp_aliase:
+                        data["aliases"].append(data['name'])
+                        author['name'] = temp_aliase
+                        data["aliases"].remove(temp_aliase)
+                        author["aliases"] = data["aliases"] if data["aliases"] else None
             # self.db.insert_author(author)
             yield author
         except KeyError:
