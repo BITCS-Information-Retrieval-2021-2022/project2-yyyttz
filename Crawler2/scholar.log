@@ -1,0 +1,119 @@
+2021-11-30 01:34:14 [scrapy.utils.log] INFO: Scrapy 2.5.1 started (bot: scholar)
+2021-11-30 01:34:14 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.7.11 (default, Jul 27 2021, 09:42:29) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 21.0.0 (OpenSSL 1.1.1l  24 Aug 2021), cryptography 35.0.0, Platform Windows-10-10.0.19041-SP0
+2021-11-30 01:34:14 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scholar',
+ 'LOG_FILE': 'scholar.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scholar.spiders',
+ 'SPIDER_MODULES': ['scholar.spiders']}
+2021-11-30 01:34:14 [scrapy.extensions.telnet] INFO: Telnet Password: 4fc555ae8c4e7721
+2021-11-30 01:34:14 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-11-30 01:34:15 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-11-30 01:34:15 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-11-30 01:34:15 [scrapy.middleware] INFO: Enabled item pipelines:
+['scholar.pipelines.AminerPipeline']
+2021-11-30 01:34:15 [scrapy.core.engine] INFO: Spider opened
+2021-11-30 01:34:15 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-11-30 01:34:15 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-11-30 01:35:16 [scrapy.extensions.logstats] INFO: Crawled 462 pages (at 462 pages/min), scraped 1270 items (at 1270 items/min)
+2021-11-30 01:36:15 [scrapy.extensions.logstats] INFO: Crawled 925 pages (at 463 pages/min), scraped 2637 items (at 1367 items/min)
+2021-11-30 01:37:15 [scrapy.extensions.logstats] INFO: Crawled 1407 pages (at 482 pages/min), scraped 4033 items (at 1396 items/min)
+2021-11-30 01:38:16 [scrapy.extensions.logstats] INFO: Crawled 1767 pages (at 360 pages/min), scraped 5249 items (at 1216 items/min)
+2021-11-30 01:39:17 [scrapy.extensions.logstats] INFO: Crawled 2115 pages (at 348 pages/min), scraped 6503 items (at 1254 items/min)
+2021-11-30 01:39:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.aminer.cn/profile/j-g-learned/53f42fc9dabfaedf43534d89> (referer: https://apiv2.aminer.cn/magic?a=GetPersonPubs__person.GetPersonPubs___)
+Traceback (most recent call last):
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\22122\Desktop\test\scholar\scholar\spiders\aminer_spider.py", line 87, in parse
+    data = json.loads(data)
+  File "D:\Software\Anaconda\envs\scrapy\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\Software\Anaconda\envs\scrapy\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Software\Anaconda\envs\scrapy\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Invalid control character at: line 1 column 39236 (char 39235)
+2021-11-30 01:40:16 [scrapy.extensions.logstats] INFO: Crawled 2491 pages (at 376 pages/min), scraped 7800 items (at 1297 items/min)
+2021-11-30 01:41:16 [scrapy.extensions.logstats] INFO: Crawled 2919 pages (at 428 pages/min), scraped 9061 items (at 1261 items/min)
+2021-11-30 01:42:17 [scrapy.extensions.logstats] INFO: Crawled 3294 pages (at 375 pages/min), scraped 10118 items (at 1057 items/min)
+2021-11-30 01:43:16 [scrapy.extensions.logstats] INFO: Crawled 3503 pages (at 209 pages/min), scraped 11197 items (at 1079 items/min)
+2021-11-30 01:43:45 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.aminer.cn/profile/Y-Sun/53f556c8dabfae963d25b76f> (referer: https://apiv2.aminer.cn/magic?a=GetPersonPubs__person.GetPersonPubs___)
+Traceback (most recent call last):
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 342, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 40, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Software\Anaconda\envs\scrapy\lib\site-packages\scrapy\core\spidermw.py", line 56, in _evaluate_iterable
+    for r in iterable:
+  File "C:\Users\22122\Desktop\test\scholar\scholar\spiders\aminer_spider.py", line 87, in parse
+    data = json.loads(data)
+  File "D:\Software\Anaconda\envs\scrapy\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "D:\Software\Anaconda\envs\scrapy\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Software\Anaconda\envs\scrapy\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 47 (char 46)
+2021-11-30 01:44:15 [scrapy.extensions.logstats] INFO: Crawled 3894 pages (at 391 pages/min), scraped 12403 items (at 1206 items/min)
+2021-11-30 01:45:16 [scrapy.extensions.logstats] INFO: Crawled 4335 pages (at 441 pages/min), scraped 13687 items (at 1284 items/min)
+2021-11-30 01:46:15 [scrapy.extensions.logstats] INFO: Crawled 4775 pages (at 440 pages/min), scraped 15013 items (at 1326 items/min)
+2021-11-30 01:47:16 [scrapy.extensions.logstats] INFO: Crawled 5237 pages (at 462 pages/min), scraped 16202 items (at 1189 items/min)
