@@ -282,12 +282,12 @@ ps. 接口基于flask框架
 
 - 首页搜索页面
 
-![HomePage](.\images\HomePage.png)
+![HomePage](https://github.com/BITCS-Information-Retrieval-2021-2022/project2-yyyttz/blob/main/IR/images/HomePage.png)
 
 - 搜索结果页面
 
-![normalResult](.\images\normalResult.png)
+![normalResult](https://github.com/BITCS-Information-Retrieval-2021-2022/project2-yyyttz/blob/main/IR/images/normalResult.png)
 
 - 作者详情页
 
-![authorDetail](.\images\authorDetail.png)
+![authorDetail](https://github.com/BITCS-Information-Retrieval-2021-2022/project2-yyyttz/blob/main/IR/images/authorDetail.png)
