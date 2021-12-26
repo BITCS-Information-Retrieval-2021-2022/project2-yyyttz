@@ -1,0 +1,475 @@
+2021-11-28 11:00:01 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: scholar)
+2021-11-28 11:00:01 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+2021-11-28 11:00:01 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scholar',
+ 'DOWNLOAD_DELAY': 3,
+ 'LOG_FILE': 'scholar.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scholar.spiders',
+ 'SPIDER_MODULES': ['scholar.spiders']}
+2021-11-28 11:00:01 [scrapy.extensions.telnet] INFO: Telnet Password: f2cd2609f4b6aafd
+2021-11-28 11:00:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-11-28 11:00:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-11-28 11:00:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-11-28 11:00:02 [scrapy.middleware] INFO: Enabled item pipelines:
+['scholar.pipelines.ScholarPipeline']
+2021-11-28 11:00:02 [scrapy.core.engine] INFO: Spider opened
+2021-11-28 11:00:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-11-28 11:00:02 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-11-28 11:01:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/45240050>: HTTP status code is not handled or not allowed
+2021-11-28 11:01:02 [scrapy.extensions.logstats] INFO: Crawled 1 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2021-11-28 11:01:03 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/99865618>: HTTP status code is not handled or not allowed
+2021-11-28 11:01:07 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/96067424>: HTTP status code is not handled or not allowed
+2021-11-28 11:01:20 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: scholar)
+2021-11-28 11:01:20 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+2021-11-28 11:01:20 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scholar',
+ 'DOWNLOAD_DELAY': 3,
+ 'LOG_FILE': 'scholar.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scholar.spiders',
+ 'SPIDER_MODULES': ['scholar.spiders']}
+2021-11-28 11:01:20 [scrapy.extensions.telnet] INFO: Telnet Password: d996f5030fdfb6d8
+2021-11-28 11:01:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-11-28 11:01:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-11-28 11:01:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-11-28 11:01:20 [scrapy.middleware] INFO: Enabled item pipelines:
+['scholar.pipelines.ScholarPipeline']
+2021-11-28 11:01:20 [scrapy.core.engine] INFO: Spider opened
+2021-11-28 11:01:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-11-28 11:01:20 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-11-28 11:01:21 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/85568069>: HTTP status code is not handled or not allowed
+2021-11-28 11:01:22 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/63918756>: HTTP status code is not handled or not allowed
+2021-11-28 11:01:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/20249144>: HTTP status code is not handled or not allowed
+2021-11-28 11:01:32 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/68231045>: HTTP status code is not handled or not allowed
+2021-11-28 11:01:53 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/8889745>: HTTP status code is not handled or not allowed
+2021-11-28 11:01:59 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/34925088>: HTTP status code is not handled or not allowed
+2021-11-28 11:02:03 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/71327156>: HTTP status code is not handled or not allowed
+2021-11-28 11:02:07 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/60018089>: HTTP status code is not handled or not allowed
+2021-11-28 11:02:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/68527053>: HTTP status code is not handled or not allowed
+2021-11-28 11:02:19 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/43305975>: HTTP status code is not handled or not allowed
+2021-11-28 11:02:20 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 24 pages/min), scraped 6 items (at 6 items/min)
+2021-11-28 11:02:24 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/57268781>: HTTP status code is not handled or not allowed
+2021-11-28 11:02:26 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/34691928>: HTTP status code is not handled or not allowed
+2021-11-28 11:03:20 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 24 pages/min), scraped 99 items (at 93 items/min)
+2021-11-28 11:53:38 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: scholar)
+2021-11-28 11:53:38 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+2021-11-28 11:53:38 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scholar',
+ 'DOWNLOAD_DELAY': 3,
+ 'LOG_FILE': 'scholar.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scholar.spiders',
+ 'SPIDER_MODULES': ['scholar.spiders']}
+2021-11-28 11:53:38 [scrapy.extensions.telnet] INFO: Telnet Password: 9a19bb6c4bf090aa
+2021-11-28 11:53:38 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-11-28 11:53:39 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-11-28 11:53:39 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-11-28 11:53:39 [scrapy.middleware] INFO: Enabled item pipelines:
+['scholar.pipelines.ScholarPipeline']
+2021-11-28 11:53:39 [scrapy.core.engine] INFO: Spider opened
+2021-11-28 11:53:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-11-28 11:53:39 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-11-28 11:53:40 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/44994049>: HTTP status code is not handled or not allowed
+2021-11-28 11:53:56 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/48085652>: HTTP status code is not handled or not allowed
+2021-11-28 11:54:07 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/44508496>: HTTP status code is not handled or not allowed
+2021-11-28 11:54:19 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/93134443>: HTTP status code is not handled or not allowed
+2021-11-28 11:54:23 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/45807928>: HTTP status code is not handled or not allowed
+2021-11-28 11:54:39 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 24 pages/min), scraped 8 items (at 8 items/min)
+2021-11-28 11:55:11 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <401 https://www.semanticscholar.org/author/Adam-%C5%A0evc%C5%AF/97557762/claim>: HTTP status code is not handled or not allowed
+2021-11-28 11:55:39 [scrapy.extensions.logstats] INFO: Crawled 49 pages (at 25 pages/min), scraped 119 items (at 111 items/min)
+2021-11-28 12:00:35 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: scholar)
+2021-11-28 12:00:35 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+2021-11-28 12:00:35 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scholar',
+ 'DOWNLOAD_DELAY': 3,
+ 'LOG_FILE': 'scholar.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scholar.spiders',
+ 'SPIDER_MODULES': ['scholar.spiders']}
+2021-11-28 12:00:35 [scrapy.extensions.telnet] INFO: Telnet Password: 78e185efa0dbd683
+2021-11-28 12:00:35 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-11-28 12:00:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-11-28 12:00:35 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-11-28 12:00:35 [scrapy.middleware] INFO: Enabled item pipelines:
+['scholar.pipelines.ScholarPipeline']
+2021-11-28 12:00:35 [scrapy.core.engine] INFO: Spider opened
+2021-11-28 12:00:35 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-11-28 12:00:35 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-11-28 12:00:36 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/59709049>: HTTP status code is not handled or not allowed
+2021-11-28 12:00:47 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/43063007>: HTTP status code is not handled or not allowed
+2021-11-28 12:00:51 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/6104491>: HTTP status code is not handled or not allowed
+2021-11-28 12:00:54 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/99608834>: HTTP status code is not handled or not allowed
+2021-11-28 12:00:57 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/48373908>: HTTP status code is not handled or not allowed
+2021-11-28 12:01:09 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/90164804>: HTTP status code is not handled or not allowed
+2021-11-28 12:01:15 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/75862546>: HTTP status code is not handled or not allowed
+2021-11-28 12:01:35 [scrapy.extensions.logstats] INFO: Crawled 23 pages (at 23 pages/min), scraped 6 items (at 6 items/min)
+2021-11-28 12:01:39 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/2552833>: HTTP status code is not handled or not allowed
+2021-11-28 12:02:22 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <401 https://www.semanticscholar.org/author/C.-Yue-mei/14291895/claim>: HTTP status code is not handled or not allowed
+2021-11-28 12:02:25 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <401 https://www.semanticscholar.org/author/Seerup-Kk/83763863/claim>: HTTP status code is not handled or not allowed
+2021-11-28 12:02:35 [scrapy.extensions.logstats] INFO: Crawled 51 pages (at 28 pages/min), scraped 114 items (at 108 items/min)
+2021-11-28 12:06:15 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: scholar)
+2021-11-28 12:06:15 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+2021-11-28 12:06:15 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scholar',
+ 'DOWNLOAD_DELAY': 3,
+ 'LOG_FILE': 'scholar.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scholar.spiders',
+ 'SPIDER_MODULES': ['scholar.spiders']}
+2021-11-28 12:06:15 [scrapy.extensions.telnet] INFO: Telnet Password: c0e41aecdf914588
+2021-11-28 12:06:15 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-11-28 12:06:15 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-11-28 12:06:15 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-11-28 12:06:15 [scrapy.middleware] INFO: Enabled item pipelines:
+['scholar.pipelines.ScholarPipeline']
+2021-11-28 12:06:15 [scrapy.core.engine] INFO: Spider opened
+2021-11-28 12:06:15 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-11-28 12:06:15 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-11-28 12:06:33 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/77796505>: HTTP status code is not handled or not allowed
+2021-11-28 12:06:41 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/61628177>: HTTP status code is not handled or not allowed
+2021-11-28 12:06:48 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/76167247>: HTTP status code is not handled or not allowed
+2021-11-28 12:06:52 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/84890020>: HTTP status code is not handled or not allowed
+2021-11-28 12:07:03 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/8474254>: HTTP status code is not handled or not allowed
+2021-11-28 12:07:07 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/27009971>: HTTP status code is not handled or not allowed
+2021-11-28 12:07:15 [scrapy.extensions.logstats] INFO: Crawled 23 pages (at 23 pages/min), scraped 7 items (at 7 items/min)
+2021-11-28 12:16:21 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: scholar)
+2021-11-28 12:16:21 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+2021-11-28 12:16:21 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scholar',
+ 'DOWNLOAD_DELAY': 3,
+ 'LOG_FILE': 'scholar.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scholar.spiders',
+ 'SPIDER_MODULES': ['scholar.spiders']}
+2021-11-28 12:16:21 [scrapy.extensions.telnet] INFO: Telnet Password: a583188591633afd
+2021-11-28 12:16:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-11-28 12:16:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-11-28 12:16:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-11-28 12:16:21 [scrapy.middleware] INFO: Enabled item pipelines:
+['scholar.pipelines.ScholarPipeline']
+2021-11-28 12:16:21 [scrapy.core.engine] INFO: Spider opened
+2021-11-28 12:16:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-11-28 12:16:21 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-11-28 12:16:35 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/67480887>: HTTP status code is not handled or not allowed
+2021-11-28 12:16:39 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/54379491>: HTTP status code is not handled or not allowed
+2021-11-28 12:16:49 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/41511899>: HTTP status code is not handled or not allowed
+2021-11-28 12:16:55 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/36224897>: HTTP status code is not handled or not allowed
+2021-11-28 12:17:13 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/17701886>: HTTP status code is not handled or not allowed
+2021-11-28 12:17:17 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/78997437>: HTTP status code is not handled or not allowed
+2021-11-28 12:17:21 [scrapy.extensions.logstats] INFO: Crawled 23 pages (at 23 pages/min), scraped 7 items (at 7 items/min)
+2021-11-28 12:17:21 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/61908266>: HTTP status code is not handled or not allowed
+2021-11-28 12:17:29 [scrapy.core.scraper] ERROR: Spider error processing <GET https://api.semanticscholar.org/graph/v1/author/51913371?fields=url,externalIds,name,aliases,affiliations,homepage,papers> (referer: https://www.semanticscholar.org/author/W.-H.-Han/51913371)
+Traceback (most recent call last):
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "E:\Code\Python\IR_Project\Crawler\scholar\spiders\semantic_scholar_spider_modify.py", line 136, in parse_author_detail
+    author["aliases"].append(data['name'])
+AttributeError: 'NoneType' object has no attribute 'append'
+2021-11-28 12:17:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://api.semanticscholar.org/graph/v1/author/2135980324?fields=url,externalIds,name,aliases,affiliations,homepage,papers> (referer: https://www.semanticscholar.org/author/S.-Kim/2135980324)
+Traceback (most recent call last):
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "E:\Code\Python\IR_Project\Crawler\scholar\spiders\semantic_scholar_spider_modify.py", line 136, in parse_author_detail
+    author["aliases"].append(data['name'])
+AttributeError: 'NoneType' object has no attribute 'append'
+2021-11-28 12:18:02 [scrapy.core.scraper] ERROR: Spider error processing <GET https://api.semanticscholar.org/graph/v1/author/46667551?fields=url,externalIds,name,aliases,affiliations,homepage,papers> (referer: https://www.semanticscholar.org/author/J.-Bourrain/46667551)
+Traceback (most recent call last):
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "E:\Code\Python\IR_Project\Crawler\scholar\spiders\semantic_scholar_spider_modify.py", line 136, in parse_author_detail
+    author["aliases"].append(data['name'])
+AttributeError: 'NoneType' object has no attribute 'append'
+2021-11-28 12:18:08 [scrapy.core.scraper] ERROR: Spider error processing <GET https://api.semanticscholar.org/graph/v1/author/49987920?fields=url,externalIds,name,aliases,affiliations,homepage,papers> (referer: https://www.semanticscholar.org/author/K.-Stoev/49987920)
+Traceback (most recent call last):
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "E:\Code\Python\IR_Project\Crawler\scholar\spiders\semantic_scholar_spider_modify.py", line 136, in parse_author_detail
+    author["aliases"].append(data['name'])
+AttributeError: 'NoneType' object has no attribute 'append'
+2021-11-28 12:20:50 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: scholar)
+2021-11-28 12:20:50 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+2021-11-28 12:20:50 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scholar',
+ 'DOWNLOAD_DELAY': 3,
+ 'LOG_FILE': 'scholar.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'scholar.spiders',
+ 'SPIDER_MODULES': ['scholar.spiders']}
+2021-11-28 12:20:50 [scrapy.extensions.telnet] INFO: Telnet Password: 949d2f92577b0c1d
+2021-11-28 12:20:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-11-28 12:20:50 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-11-28 12:20:50 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-11-28 12:20:50 [scrapy.middleware] INFO: Enabled item pipelines:
+['scholar.pipelines.ScholarPipeline']
+2021-11-28 12:20:50 [scrapy.core.engine] INFO: Spider opened
+2021-11-28 12:20:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-11-28 12:20:50 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-11-28 12:20:50 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/94556547>: HTTP status code is not handled or not allowed
+2021-11-28 12:21:03 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/23906166>: HTTP status code is not handled or not allowed
+2021-11-28 12:21:14 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/43035431>: HTTP status code is not handled or not allowed
+2021-11-28 12:21:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.semanticscholar.org/author/G.-C.-Cook/1918564> (referer: https://api.semanticscholar.org/graph/v1/author/19582890)
+Traceback (most recent call last):
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "E:\Code\Python\IR_Project\Crawler\scholar\spiders\semantic_scholar_spider_modify.py", line 100, in parse
+    author['highly_influential_citations'] = raw_data[7].root.text.replace(",", "")
+  File "D:\download_software\Anaconda\Anaconda3\lib\site-packages\parsel\selector.py", line 70, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2021-11-28 12:21:30 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <401 https://www.semanticscholar.org/author/G.-C.-Cook/1918564/claim>: HTTP status code is not handled or not allowed
+2021-11-28 12:21:35 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/54621686>: HTTP status code is not handled or not allowed
+2021-11-28 12:21:42 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/64407570>: HTTP status code is not handled or not allowed
+2021-11-28 12:21:50 [scrapy.extensions.logstats] INFO: Crawled 24 pages (at 24 pages/min), scraped 5 items (at 5 items/min)
+2021-11-28 12:21:53 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://api.semanticscholar.org/graph/v1/author/44803019>: HTTP status code is not handled or not allowed
+2021-11-28 12:22:50 [scrapy.extensions.logstats] INFO: Crawled 51 pages (at 27 pages/min), scraped 111 items (at 106 items/min)
+2021-11-28 12:23:50 [scrapy.extensions.logstats] INFO: Crawled 69 pages (at 18 pages/min), scraped 221 items (at 110 items/min)
+2021-11-28 12:24:50 [scrapy.extensions.logstats] INFO: Crawled 87 pages (at 18 pages/min), scraped 544 items (at 323 items/min)
+2021-11-28 12:25:50 [scrapy.extensions.logstats] INFO: Crawled 106 pages (at 19 pages/min), scraped 861 items (at 317 items/min)
+2021-11-28 12:26:50 [scrapy.extensions.logstats] INFO: Crawled 124 pages (at 18 pages/min), scraped 1085 items (at 224 items/min)
+2021-11-28 12:27:50 [scrapy.extensions.logstats] INFO: Crawled 147 pages (at 23 pages/min), scraped 1360 items (at 275 items/min)
+2021-11-28 12:28:50 [scrapy.extensions.logstats] INFO: Crawled 174 pages (at 27 pages/min), scraped 1499 items (at 139 items/min)
+2021-11-28 12:28:52 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <401 https://www.semanticscholar.org/author/E.-J.-Panner/97917225/claim>: HTTP status code is not handled or not allowed
