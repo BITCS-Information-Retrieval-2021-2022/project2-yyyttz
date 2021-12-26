@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Skillhunt - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/echarts.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../static/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
+
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="../static/css/aos.css">
+
+    <link rel="stylesheet" href="../static/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="../static/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../static/css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="../static/css/flaticon.css">
+    <link rel="stylesheet" href="../static/css/icomoon.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container-fluid px-md-4	">
+        <a class="navbar-brand" href="index.html">信息检索</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+    </div>
+</nav>
+<!-- END nav -->
+
+<div class="hero-wrap hero-wrap-2" style="background-image: url('../static/image/bg_1.jpg');"
+     data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-start">
+            <div class="col-md-6 ftco-animate text-center mb-5">
+                <div class="team d-md-flex p-4">
+                    <div class="img" style="background-image: url(../static/image/人物头像.jpg);margin-left: 100px"></div>
+                    <div class="text pl-md-4" style="margin-top: 50px;">
+                        <h2>{{name}} {{name_zh}}</h2>
+                        <p class="mb-1" style="font-size: small">{{profile}}</p>
+                        <p class="mb-1" style="font-size: small">{{jigou}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 ftco-animate text-center mb-5" style="margin: 0px;height: 80%">
+                <div id="containers" style="height: 100%"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="ftco-section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 pr-lg-4" style="margin: 0 auto">
+                <div class="row">
+                    {% for item in pair %}
+                    <div class="col-md-12 ftco-animate">
+                        <div class="job-post-item p-4 d-block d-lg-flex align-items-center">
+                            <div class="one-third mb-4 mb-md-0">
+                                <div class="job-post-item-header align-items-center">
+<!--                                    <span class="subadge">Partime</span>-->
+                                    <h2 class="mr-3 text-black"><a href="#">{{item['title']}}</a></h2>
+                                </div>
+                                <div class="job-post-item-body d-block d-md-flex">
+                                    <div class="mr-3"><span class="icon-layers"></span> <a href="#">{{item['authorstrings']}}</a>
+                                    </div>
+                                </div>
+                                <div class="job-post-item-body d-block d-md-flex">
+                                    <div><span class="icon-my_location"></span> <span>{{item['venue_info_name']}} {{item['year']}} </span></div>
+                                </div>
+                            </div>
+                            <div class="one-forth ml-auto d-flex align-items-center mt-4 md-md-0">
+                                <div>
+                                    <a href="#"
+                                       class="icon text-center d-flex justify-content-center align-items-center icon mr-2">
+                                        <span class="icon-heart"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end -->
+                    {% endfor %}
+
+                </div>
+                <div class="row mt-5">
+                    <div class="col text-center">
+                        <div class="block-27">
+
+                                <form action="/candidates"method = "POST">
+                                    <input type="text" value="请输入跳转页数" name="page"/>
+                                    <input type="submit" value="提交" /></form>
+
+                                <li><a href="#" id="pagenum" >{{start}}/{{size}}</a></li>
+
+                        </div>
+                    </div>
+                </div>
+<!--                <div class="row mt-5">-->
+<!--                    <div class="col text-center">-->
+<!--                        <div class="block-27">-->
+<!--                            <ul>-->
+<!--                                <li><a href="#">&lt;</a></li>-->
+<!--                                <li class="active"><span>1</span></li>-->
+<!--                                <li><a href="#">&gt;</a></li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>Copyright &copy; 2021.Company name All rights reserved.<a target="_blank"
+                                                                             href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00"></circle>
+    </svg>
+</div>
+
+<script type="text/javascript"></script>
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="../static/js/popper.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/jquery.easing.1.3.js"></script>
+<script src="../static/js/jquery.waypoints.min.js"></script>
+<script src="../static/js/jquery.stellar.min.js"></script>
+<script src="../static/js/owl.carousel.min.js"></script>
+<script src="../static/js/jquery.magnific-popup.min.js"></script>
+<script src="../static/js/aos.js"></script>
+<script src="../static/js/jquery.animateNumber.min.js"></script>
+<script src="../static/js/scrollax.min.js"></script>
+
+<script src="../static/js/google-map.js"></script>
+<script src="../static/js/main.js"></script>
+<script type="text/javascript">
+    a = '{{ name|tojson}}'
+    allcase = '{{ graph|tojson}}';
+
+    var entityList = eval(allcase)[0].nodes;
+    var triadList = eval(allcase)[0].links;
+
+    var dataList = [];
+    var linkedList = [];
+
+    entityList.forEach(item => {
+        let DataTemp = {
+            itemStyle: null,
+            value: item.papers,
+            symbolSize: 20,
+            name: item.name,
+            x: item.x,
+            y: item.y
+        };
+        dataList.push(DataTemp);
+    });
+
+    triadList.forEach(item => {
+        let LinkTemp = {
+            source: item.source,
+            target: item.target,
+            label: {
+                normal: {
+                    show: true,
+                    formatter: item.distance
+                    //这里用来设置关系边显示的东西
+                }
+            }
+        };
+        linkedList.push(LinkTemp);
+    });
+
+    // export default {
+    //     name: "Show",
+    //     props: ["load"],
+    //     data() {
+    //         return {
+    //         msg: "Welcome to Your Vue.js App",
+    //         dataList: [],
+    //         linkList: [],
+    //         option:{},
+    //         };
+    //     },
+    //     mounted() {
+    //         this.dataList = dataList;
+    //         this.linkList = linkList;
+    //         this.drawLine();
+    //     },
+    //     methods: {
+    var chartDom = document.getElementById('containers');
+    var myChart = echarts.init(chartDom)
+
+    option = {
+        title: {
+            text: ""
+        },
+        tooltip: {
+        trigger: "item",
+        triggerOn: "mousemove",
+        formatter: function(params) {
+            if (params.data.sourse || params.data.target) {
+            //这个内容就是提示时显示的内容。
+            return 'distance:' + params.data.label.formatter;
+            } else {
+            //在关系图里，能进到这里的数据项，应该只有节点和关系两种，所以不是关系就只能是节点……
+            return 'papers:' + params.value;
+            }
+        }
+        //这里可以设置边关系的提示信息。
+        //可以写一个函数，返回关系的名称
+        },
+        animationDuration: 1500,
+        animationEasingUpdate: "quinticInOut",
+        series: [
+        {
+            name: "作者网络关系图",
+            type: "graph",
+            layout: "none",
+            data: dataList, //存放节点信息
+            links: linkedList, //存放边信息
+            roam: true,
+            //设置布局
+            force: {
+            initLayout: "none" //初始布局
+            },
+            //设置是否可以放大或者移动
+            focusNodeAdjacency: false,
+            itemStyle: {
+            normal: {
+                borderColor: "#fff",
+                borderWidth: 1,
+                shadowBlur: 10,
+                shadowColor: "rgba(0, 0, 0, 0.3)"
+            }
+            },
+            label: {
+                normal: {
+                    show: true
+                }
+            },
+            edgeSymbol: ["circle", ""],
+            edgeSymbolSize: [4, 10],
+            edgeLabel: {
+                show:false,
+                normal: {
+                    textStyle: {
+                        fontSize: 0
+                    //此处的fontsize是关系直接显示的文字的大小
+                    }
+                }
+            },
+            lineStyle: {
+            normal: {
+                opacity: 0.2,
+                width: 4
+                //curveness: 0.2
+            }
+            },
+            emphasis: {
+            lineStyle: {
+                width: 3
+            }
+            }
+        }
+        ]
+    };
+    myChart.setOption(this.option);
+
+</script>
+
+</body>
+</html>

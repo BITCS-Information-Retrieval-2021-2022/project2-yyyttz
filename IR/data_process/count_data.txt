@@ -1,0 +1,2 @@
+id_count = 15040307; no_id_count = 2359280; total = 17399587
+there are 7669188 id in a_researcher, except 7371119

@@ -1,0 +1,184 @@
+a_researcher
+count: 914594
+id: 1.0000
+links: 0.0731
+name: 1.0000
+name_zh: 0.0567
+tags: 0.8349
+tags_score: 0.8349
+indices_citations: 0.9997
+indices_hindex: 0.9997
+indices_pubs: 1.0000
+profile_address: 0.0260
+profile_affiliation: 0.8054
+profile_biography: 0.0297
+profile_educations: 0.0338
+profile_email: 0.0000
+profile_fax: 0.0150
+profile_gender: 0.8454
+profile_homepage: 0.0289
+profile_organization: 0.7454
+profile_phone: 0.0320
+profile_position: 0.0437
+profile_position_zh: 0.0207
+profile_work: 0.0243
+publications: 0.0000
+-------------
+
+a_paper
+count: 2869196
+id: 1.0000
+year: 1.0000
+title: 0.9951
+title_zh: 0.0338
+abstract: 0.5719
+abstract_zh: 0.0336
+authors: 1.0000
+order: 1.0000
+num_citation: 1.0000
+lang: 0.9274
+pdf: 0.0425
+doi: 0.6895
+urls: 0.6705
+versions: 1.0000
+venue_issue: 0.6693
+venue_volume: 0.7046
+venue_info_name: 0.8590
+venue_info_name_zh: 0.0314
+pages_end: 0.6893
+pages_start: 0.7061
+-------------
+
+aminer_paper
+count: 626461
+id: 1.0000
+year: 1.0000
+title: 0.9948
+title_zh: 0.0329
+abstract: 0.5424
+abstract_zh: 0.0326
+authors: 1.0000
+order: 1.0000
+num_citation: 1.0000
+lang: 0.9221
+pdf: 0.0419
+doi: 0.6791
+urls: 0.6635
+versions: 1.0000
+venue_issue: 0.6680
+venue_volume: 0.6977
+venue_info_name: 0.8578
+venue_info_name_zh: 0.0305
+pages_end: 0.6774
+pages_start: 0.6928
+-------------
+
+aminer_researcher
+count: 201871
+id: 0.8941
+links: 0.0861
+name: 0.8941
+name_zh: 0.0606
+tags: 0.7840
+tags_score: 0.7840
+indices_citations: 0.8940
+indices_hindex: 0.8940
+indices_pubs: 1.0000
+profile_address: 0.0371
+profile_affiliation: 0.7553
+profile_biography: 0.0458
+profile_educations: 0.0521
+profile_email: 0.0000
+profile_fax: 0.0225
+profile_gender: 0.7661
+profile_homepage: 0.0398
+profile_organization: 0.6874
+profile_phone: 0.0483
+profile_position: 0.0655
+profile_position_zh: 0.0320
+profile_work: 0.0395
+publications: 0.0000
+-------------
+
+paper
+count: 789157
+id: 1.0000
+year: 1.0000
+title: 0.9967
+title_zh: 0.0211
+abstract: 0.5086
+abstract_zh: 0.0207
+authors: 1.0000
+order: 1.0000
+num_citation: 1.0000
+lang: 0.9270
+pdf: 0.0303
+doi: 0.6871
+urls: 0.6710
+versions: 1.0000
+venue_issue: 0.6672
+venue_volume: 0.6986
+venue_info_name: 0.8519
+venue_info_name_zh: 0.0193
+pages_end: 0.6718
+pages_start: 0.6851
+-------------
+
+researcher
+count: 293569
+id: 0.8977
+links: 0.0709
+name: 0.8977
+name_zh: 0.0383
+tags: 0.7770
+tags_score: 0.7770
+indices_citations: 0.8976
+indices_hindex: 0.8976
+indices_pubs: 1.0000
+profile_address: 0.0308
+profile_affiliation: 0.7433
+profile_biography: 0.0390
+profile_educations: 0.0425
+profile_email: 0.0000
+profile_fax: 0.0192
+profile_gender: 0.7906
+profile_homepage: 0.0333
+profile_organization: 0.6870
+profile_phone: 0.0389
+profile_position: 0.0524
+profile_position_zh: 0.0241
+profile_work: 0.0323
+publications: 0.0000
+-------------
+
+semantic_paper
+count: 987629
+id: 1.0000
+externalIds: 0.9771
+title: 1.0000
+abstract: 0.7513
+venue_info_name: 0.4761
+year: 0.9957
+num_citation: 0.6889
+authors: 1.0000
+num_reference: 0.6339
+num_influentialCitation: 0.2541
+fieldsOfStudy: 0.9200
+references: 0.6496
+-------------
+
+semantic_researcher
+count: 32696
+id: 1.0000
+name: 1.0000
+indices_pubs: 1.0000
+indices_hindex: 1.0000
+indices_citations: 1.0000
+highly_influential_citations: 1.0000
+externalIds: 0.0636
+aliases: 0.2990
+profile_affiliation: 0.0023
+profile_homepage: 0.0007
+publications: 0.4005
+-------------
+
