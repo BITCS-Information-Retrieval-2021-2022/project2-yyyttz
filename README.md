@@ -73,28 +73,6 @@
 * ip：121.5.169.182
 
 
-* ssh port：22
-
-### 账户信息
-
-### 1. root
-
-账号：cty
-
-密码：tg0XAKx2stAzeOWH
-
-### 2. front
-
-账号：front
-
-密码：xxjsfront
-
-### 1. back
-
-账号：back
-
-密码：xxjsback
-
 ### 文件结构
 
 #### 1. 用户个人空间
